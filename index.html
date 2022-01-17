@@ -53,14 +53,18 @@
                     ><img src="./assets/images/logo.svg" alt="내일의 집"
                   /></a>
                 </h1>
+
                 <nav class="gnb-nav sm-hidden">
                   <h2 class="visually-hidden">메뉴</h2>
                   <ul class="gnb-nav-list">
                     <li class="gnb-nav-item"><a href="/">커뮤니티</a></li>
-                    <li class="gnb-nav-item is-active"><a href="/">스토어</a></li>
+                    <li class="gnb-nav-item is-active">
+                      <a href="/">스토어</a>
+                    </li>
                     <li class="gnb-nav-item"><a href="/">인테리어 시공 </a></li>
                   </ul>
                 </nav>
+
                 <button
                   class="gnb-icon-button is-menu sm-only"
                   type="button"
@@ -69,6 +73,7 @@
                   <i class="ic-menu"></i>
                 </button>
               </div>
+
               <div class="gnb-right">
                 <div class="input-group lg-only">
                   <i class="ic-search"></i>
@@ -78,6 +83,8 @@
                     placeholder="스토어 검색"
                   />
                 </div>
+
+                <!-- NOTE: 로그인 한 경우 -->
                 <div class="button-group">
                   <button
                     class="gnb-icon-button is-search lg-hidden"
@@ -106,21 +113,59 @@
                     aria-label="장바구니 페이지로 이동"
                   >
                     <i class="ic-cart"></i>
-										<strong class="badge">5</strong>
+                    <strong class="badge">5</strong>
                   </a>
-                  <button
-                    class="gnb-avatar-button sm-hidden"
-                    type="button"
-                    aria-label="마이메뉴 열기 버튼"
-                  >
-                    <div class="avatar-32">
-                      <img
-                        src="./assets/images/img-user-01.jpg"
-                        alt="유저 프로필 사진"
-                      />
+
+                  <div class="my-menu sm-hidden">
+                    <button
+                      class="my-menu-button"
+                      type="button"
+                      aria-label="마이메뉴 열기 버튼"
+                    >
+                      <div class="avatar-32">
+                        <img
+                          src="./assets/images/img-user-01.jpg"
+                          alt="유저 프로필 사진"
+                        />
+                      </div>
+                    </button>
+
+                    <div class="my-menu-content">
+                      <ul class="my-menu-list">
+                        <li class="my-menu-item"><a href="/">마이페이지</a></li>
+                        <li class="my-menu-item"><a href="/">나의 쇼핑</a></li>
+                        <li class="my-menu-item"><a href="/">이벤트</a></li>
+                        <li class="my-menu-item">
+                          <button type="button">로그아웃</button>
+                        </li>
+                      </ul>
                     </div>
-                  </button>
+                  </div>
                 </div>
+
+                <!-- NOTE: 로그인 하지 않았을 경우 -->
+                <!-- <div class="button-group">
+                  <button
+                    class="gnb-icon-button is-search lg-hidden"
+                    type="button"
+                    aria-label="검색창 열기 버튼"
+                  >
+                    <i class="ic-search"></i>
+                  </button>
+                  <a
+                    class="gnb-icon-button is-cart"
+                    href="/"
+                    aria-label="장바구니 페이지로 이동"
+                  >
+                    <i class="ic-cart"></i>
+                  </a>
+
+                  <div class="gnb-auth sm-hidden">
+                    <a href="/">로그인</a>
+                    <a href="/">회원가입</a>
+                  </div>
+                </div> -->
+
                 <button class="btn-primary btn-40 sm-hidden" type="button">
                   글쓰기
                   <i class="ic-chevron" aria-hidden></i>
