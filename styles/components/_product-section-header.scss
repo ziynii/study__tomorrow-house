@@ -28,10 +28,6 @@
     @include text-style(14, $blue);
     padding: 15px;
     font-weight: 700;
-
-    &.is-right {
-      transform: translateY(-50%) rotate(-90deg);
-    }
   }
 
   .icon-button {
@@ -40,6 +36,10 @@
     height: 22px + (15px * 2);
     font-size: 22px;
     color: $secondary;
+
+    &.is-right {
+      transform: translateY(-50%) rotate(-90deg);
+    }
   }
 
   @include responsive(T) {
