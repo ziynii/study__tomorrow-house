@@ -3,7 +3,7 @@
 
   &-devider {
     height: 8px;
-    margin: 0 -15px;
+    margin: 0 -#{$grid-margin};
     background-color: $border;
   }
 
@@ -15,7 +15,7 @@
     margin-left: auto;
   }
 
-	@include responsive(D) {
-		margin-left: 0;
-	}
+  @include responsive(D) {
+    margin-left: 0;
+  }
 }
