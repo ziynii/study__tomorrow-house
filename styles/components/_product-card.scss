@@ -1,13 +1,14 @@
 .product-card {
   &-image {
-    overflow: hidden;
     margin-bottom: 8px;
+    overflow: hidden;
     border-radius: 4px;
 
     img {
       display: block;
       width: 100%;
       height: auto;
+      transition: transform 200ms ease-in-out;
     }
   }
 
