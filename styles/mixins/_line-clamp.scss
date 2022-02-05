@@ -1,0 +1,8 @@
+// sass-lint:disable no-vendor-prefixes
+
+@mixin line-clamp($line) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
